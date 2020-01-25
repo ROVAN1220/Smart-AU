@@ -138,13 +138,13 @@ def upload():
 
         result = disease_list[int(preds)]
         if(result=="Grape___Black_rot"):
-            message = black_rot
+            message = "Grape___Black_rot"
             return message
         if(result=="Grape___Esca_(Black_Measles)"):
-            message = Grape___Esca
+            message = "Grape___Esca"
             return message
         if(result=="Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"):
-            message = Leaf_blight
+            message = "Leaf_blight"
             return message
         if(result=="Grape___healthy"):
             message = "Grape is Healthy"

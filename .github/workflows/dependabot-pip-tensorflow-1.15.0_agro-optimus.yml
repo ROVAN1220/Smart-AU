@@ -22,11 +22,11 @@ jobs:
 
     - name: Install Python dependencies
       run: |
-        python3 -m venv env
-        source env/bin/activate
+        python -m venv env
+         venv/Scripts/activate
         pip install -r requirements.txt
     - name: Zip the application files
-      run: zip -r myapp.zip .
+
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
@@ -34,4 +34,4 @@ jobs:
         app-name: 'agro-optimus'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_de894d42aab8446b81f8d60c5a0864c8 }}
-        package: './myapp.zip'
+      

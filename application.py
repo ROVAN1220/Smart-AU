@@ -6,7 +6,7 @@ import glob
 import re
 import numpy as np
 
-# Keras
+# KerasLibrary
 from keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from keras.models import load_model
 from keras.preprocessing import image
